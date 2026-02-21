@@ -1,81 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Daniel O'Connor's webpage</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                color: #333;
+                background-color: #fafafa;
+                line-height: 1.7;
+                padding: 2.5rem 1.5rem;
+            }
+
+            .container {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            header {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            header img {
+                width: 180px;
+                height: 180px;
+                object-fit: cover;
+                border-radius: 50%;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+                margin-bottom: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+                color: #555;
+            }
+
+            a {
+                color: #3170a9;
+                text-decoration: none;
+                transition: color 0.2s ease;
+            }
+
+            a:hover {
+                color: #1a4a75;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-top: 2rem;
+                margin-bottom: 0.75rem;
+                padding-bottom: 0.4rem;
+                border-bottom: 2px solid #e5e5e5;
+            }
+
+            ul {
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                padding-left: 1.25rem;
+            }
+
+            li {
+                margin-bottom: 0.4rem;
+            }
+
+            p, .section-text {
+                margin-bottom: 0.75rem;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    padding: 1.5rem 1rem;
+                }
+
+                header img {
+                    width: 140px;
+                    height: 140px;
+                }
+
+                header h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1.15rem;
+                }
+            }
+        </style>
     </head>
     <body>
-        <img src="DietCokeAddiction.jpeg" alt="Maybe I have an addiction"
-                                          style="max-width:25%; height:auto;">
-        <br>
-        Here are my <a href="DanielOConnor_resume.pdf"
-                       target="_blank">resume</a>, my <a href="https://escholarship.org/uc/item/4z1126w3#page-1"
-                      target="_blank">PhD thesis</a>, and my <a href="https://scholar.google.com/citations?user=gK_sUR8AAAAJ&hl=en"
-                      target="_blank">Google Scholar page</a>.
+        <div class="container">
+            <header>
+                <img src="DietCokeAddiction.jpeg" alt="Daniel O'Connor">
+                <h1>Daniel O'Connor</h1>
+                <p>
+                    Here are my <a href="DanielOConnor_resume.pdf"
+                                   target="_blank">resume</a>, my <a href="https://escholarship.org/uc/item/4z1126w3#page-1"
+                                  target="_blank">PhD thesis</a>, and my <a href="https://scholar.google.com/citations?user=gK_sUR8AAAAJ&hl=en"
+                                  target="_blank">Google Scholar page</a>.
+                </p>
+                <p>
+                    I post on math.stackexchange under the username <a href="https://math.stackexchange.com/users/40119/littleo"
+                                                                       target="_blank">littleO</a>.
+                </p>
+            </header>
 
-        <br>
-        <br>
+            <h2 id="youtube-videos">YouTube videos</h2>
+            <p>
+                Here are my <a href="https://www.youtube.com/playlist?list=PLD4FG_4NttPv0k8BjI8qo3J3H8cSv2m9q"
+                               target="_blank">machine learning videos</a> and my
+                            <a href="https://www.youtube.com/playlist?list=PLD4FG_4NttPtnJAs8RU9ecl0n_LWkTNNA"
+                               target="_blank">multivariable calculus videos</a>.
+            </p>
 
-        I post on math.stackexchange under the username <a href="https://math.stackexchange.com/users/40119/littleo"
-                                                           target="_blank">littleO</a>.
-        <br>
+            <h2>Linear Algebra slides</h2>
+            <p>
+                Here are 300+ <a href="https://drive.google.com/file/d/1zMKQhljg9jy6UfCASVCvE2aGAvg40z06/view?usp=sharing"
+                                 target="_blank">slides</a> that I used when teaching linear algebra.
+            </p>
 
-        <h2 id="youtube-videos"> YouTube videos </h2>
-        Here are my <a href="https://www.youtube.com/playlist?list=PLD4FG_4NttPv0k8BjI8qo3J3H8cSv2m9q"
-                       target="_blank">machine learning videos</a> and my
-                    <a href="https://www.youtube.com/playlist?list=PLD4FG_4NttPtnJAs8RU9ecl0n_LWkTNNA"
-                       target="_blank">multivariable calculus videos</a>.
+            <h2>Multivariable calculus slides</h2>
+            <p>
+                Here are 250+ <a href="https://drive.google.com/file/d/1AnyNMqVTJgKX_Wj8W3TN7LR9p7bhGQsc/view?usp=sharing"
+                                 target="_blank">slides</a> that I used when teaching vector calculus.
+            </p>
 
-        <br>
-        
-        <h2 id="summer-zero-math"> Summer Zero Math Problem Sets </h2>
-        <ul>
-            <li><a href="./SummerZeroMath/problemSet_01.pdf" 
-                   target="_blank">Problem set 1</a> </li>
-            <li><a href="./SummerZeroMath/problemSet_02.pdf" 
-                   target="_blank">Problem set 2</a> </li>
-            <li><a href="./SummerZeroMath/problemSet_03.pdf" 
-                   target="_blank">Problem set 3</a> </li>
-            <li><a href="./SummerZeroMath/problemSet_04.pdf" 
-                   target="_blank">Problem set 4</a> </li>
-            <li><a href="./SummerZeroMath/problemSet_05.pdf" 
-                   target="_blank">Problem set 5</a> </li>
-            <li><a href="./SummerZeroMath/problemSet_06.pdf" 
-                   target="_blank">Problem set 6</a> </li>
+            <h2>Intro to Deep Learning slides</h2>
+            <p>
+                These <a href="./AGI_Club_Intro.pdf"
+                         target="_blank">slides</a> give a quick introduction to deep learning using PyTorch.
+            </p>
 
-        </ul>
+            <h2 id="math-notes">Math notes</h2>
+            <p>
+                Below are a bunch of math notes I've written.
+            </p>
+            <ul>
+                <li><a href="./MathNotes/calcForMachineLearning.pdf"
+                       target="_blank">Calculus from scratch (70 pages of notes, work in progress)</a></li>
+                <li><a href="./MathNotes/What is calculus.pdf"
+                       target="_blank">What is calculus?</a></li>
+                <li><a href="./MathNotes/quickCalc.pdf"
+                       target="_blank">Quick, intuitive derivations of calculus formulas</a></li>
+                <li><a href="./MathNotes/CalcOnManifolds_Intuition_Tufte.pdf"
+                       target="_blank">The intuition behind calculus on manifolds</a></li>
+                <li><a href="./MathNotes/PoissonEquationIntuition.pdf"
+                       target="_blank">The "Dirac delta function" strategy for solving the Poisson equation</a></li>
+                <li><a href="./MathNotes/derivativeNotes.pdf"
+                       target="_blank">Calculus for linear and logistic regression</a></li>
+                <li><a href="./MathNotes/sparseLM_bundleAdjustment.pdf"
+                       target="_blank">The sparse Levenberg-Marquardt algorithm for bundle adjustment in Multiple View Geometry</a></li>
+            </ul>
 
-        <h2> Linear Algebra slides </h2>
-        Here are 300+ <a href=https://drive.google.com/file/d/1zMKQhljg9jy6UfCASVCvE2aGAvg40z06/view?usp=sharing"
-                         target="_blank">slides</a> that I use when teaching Math 230: Linear Algebra.
-
-        <h2> Intro to Deep Learning slides </h2>
-        These <a href="./AGI_Club_Intro.pdf"
-                 target="_blank">slides</a> give a quick introduction to deep learning using PyTorch.
-
-        <h2> Multivariable calculus slides </h2>
-        Here are 250+ <a href="https://drive.google.com/file/d/1AnyNMqVTJgKX_Wj8W3TN7LR9p7bhGQsc/view?usp=sharing" 
-                         target="_blank">slides</a> that I use when teaching Math 211: Calculus III.
-
-        <h2 id="math-notes"> Math notes </h2>
-        Below are a bunch of math notes I've written, which I'd like to eventually organize 
-        and expand into an "intuitive vector calculus" textbook.
-        <ul>
-            <li><a href="./MathNotes/calcForMachineLearning.pdf"
-                   target="_blank">Calculus from scratch (70 pages of notes, work in progress)</a> </li>
-            <li><a href="./MathNotes/What is calculus.pdf"
-                   target="_blank">What is calculus?</a> </li>
-            <li><a href="./MathNotes/quickCalc.pdf"
-                   target="_blank">Quick, intuitive derivations of calculus formulas</a> </li>
-            <li><a href="./MathNotes/CalcOnManifolds_Intuition_Tufte.pdf"
-                   target="_blank">The intuition behind calculus on manifolds</a> </li>
-            <li><a href="./MathNotes/PoissonEquationIntuition.pdf"
-                   target="_blank">The "Dirac delta function" strategy for solving the Poisson equation</a></li>
-            <li><a href="./MathNotes/derivativeNotes.pdf"
-                   target="_blank">Calculus for linear and logistic regression</a> </li>
-            <li><a href="./MathNotes/sparseLM_bundleAdjustment.pdf"
-                   target="_blank">The sparse Levenberg-Marquardt algorithm for bundle adjustment in Multiple View Geometry</a> </li>
-        </ul>
-
-
+            <h2 id="summer-zero-math">Summer Zero Math Problem Sets</h2>
+            <ul>
+                <li><a href="./SummerZeroMath/problemSet_01.pdf"
+                       target="_blank">Problem set 1</a></li>
+                <li><a href="./SummerZeroMath/problemSet_02.pdf"
+                       target="_blank">Problem set 2</a></li>
+                <li><a href="./SummerZeroMath/problemSet_03.pdf"
+                       target="_blank">Problem set 3</a></li>
+                <li><a href="./SummerZeroMath/problemSet_04.pdf"
+                       target="_blank">Problem set 4</a></li>
+                <li><a href="./SummerZeroMath/problemSet_05.pdf"
+                       target="_blank">Problem set 5</a></li>
+                <li><a href="./SummerZeroMath/problemSet_06.pdf"
+                       target="_blank">Problem set 6</a></li>
+            </ul>
+        </div>
     </body>
 </html>
